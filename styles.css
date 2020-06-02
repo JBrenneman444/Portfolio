@@ -3,6 +3,8 @@ body {
     /* border: blue 5px solid; */
     height: 99vh;
     box-sizing: border-box;
+
+    font-family: 'Exo 2', sans-serif;
 }
 
 #container {
@@ -27,7 +29,8 @@ body {
     color: white;
     padding: 5vh 0;
 
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 200;
     font-size:6vh;
 }
 
@@ -72,8 +75,9 @@ body {
 .main-buttons {
     background-color: black;
     color: white;
-    padding: 1.5vh 1vw;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1.5vh 2vw;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 200;
     font-size:4vh;
 }
 
