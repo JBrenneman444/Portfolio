@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    /* border: blue 5px solid; */
+    height: 99vh;
+    box-sizing: border-box;
+}
+
+#container {
+    /* border: crimson 5px solid; */
+    height: 88vh;
+    width: 50%;
+    margin: 5vh auto 0 auto;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* ======================================================================== */
+/* NAME HEADER DIV ----------------------> */
+
+#nameHeader {
+    /* margin-top: 20px; */
+    text-align: center;
+
+    background-color: black;
+    color: white;
+    padding: 5vh 0;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:6vh;
+}
+
+/* END of NAME HEADER DIV */
+/* ======================================================================== */
+
+/* ======================================================================== */
+/* DISPLAYED CONTENT DIV ----------------------> */
+#displayedContent {
+    /* border: darkcyan 3px solid; */
+    box-sizing: border-box;
+    height: 62vh;
+}
+
+#main-image {
+    height: 61vh;
+    background-image: url("https://media.istockphoto.com/vectors/start-sign-path-landscape-sun-drawing-vector-id519406807");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    text-align: center;
+    line-height: 61vh;
+    font-size: 4vh;
+    color: crimson;
+}
+
+/* END of DISPLAYED CONTENT DIV ----------------------> */
+/* ======================================================================== */
+
+/* ======================================================================== */
+/* NAVIGATION BUTTONS DIV ----------------------> */
+#navigationButtons {
+    /* border: brown 3px solid; */
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.main-buttons {
+    background-color: black;
+    color: white;
+    padding: 1.5vh 1vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:4vh;
+}
+
+#aboutButton {
+
+}
+
+#projectsButton {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#resumeButton {
+
+}
+/* END of NAVIGATION BUTTONS DIV ----------------------> */
+/* ======================================================================== */
