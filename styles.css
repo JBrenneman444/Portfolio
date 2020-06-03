@@ -43,6 +43,7 @@ body {
     /* border: darkcyan 3px solid; */
     box-sizing: border-box;
     height: 62vh;
+    overflow: auto;
 }
 
 #main-image {
@@ -61,16 +62,23 @@ body {
 #aboutContent {
     text-align: center;
     display: none;
+    background: darkred;
+    width: 96%;
+    margin: auto;
 }
 
 #projectsContent {
     text-align: center;
     display: none;
+    background: darkgreen;
+
 }
 
 #resumeContent {
     text-align: center;
     display: none;
+    background: darkblue;
+
 }
 
 /* END of DISPLAYED CONTENT DIV ----------------------> */
