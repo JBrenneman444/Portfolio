@@ -6,11 +6,13 @@ $( () => {
       var image = $("#main-image") // set local variable for main image
       $(this).css("background-color","darkred") // set background for the Mouse Over'd button to GREEN
       image.css("background-image",'url("https://i.pinimg.com/originals/6a/2f/67/6a2f67c1823fe82035f53db68fe27666.png")') // change bg img for main img
+      $("#aboutContent").show()
     },
     "mouseout" : function() { // undo everything
       var image = $("#main-image")
       $(this).css("background-color","black")
       image.css("background-image",'url("https://i.pinimg.com/originals/70/b2/b1/70b2b1ff0604107e41af80be2a72ba35.png")')
+      $("#aboutContent").hide()
     }
 
   });

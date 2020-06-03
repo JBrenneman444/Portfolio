@@ -58,6 +58,21 @@ body {
     color: crimson;
 }
 
+#aboutContent {
+    text-align: center;
+    display: none;
+}
+
+#projectsContent {
+    text-align: center;
+    display: none;
+}
+
+#resumeContent {
+    text-align: center;
+    display: none;
+}
+
 /* END of DISPLAYED CONTENT DIV ----------------------> */
 /* ======================================================================== */
 
