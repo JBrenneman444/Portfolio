@@ -1,16 +1,20 @@
+/* * {
+    border: 1px solid yellow;
+} */
+
 html {
     overflow: scroll;
     overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;  /* Remove scrollbar space */
+    width: 0px;  /* Remove scrollbar space */
     /* background: transparent;  Optional: just make scrollbar invisible */
 }
 
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
     background: black;
-}
+} */
 
 body {
     margin: 0;
@@ -22,7 +26,7 @@ body {
 }
 
 #container {
-    border: crimson 5px solid;
+    /* border: crimson 5px solid; */
     height: 90vh;
     width: 50%;
     margin: 5vh auto 0 auto;
@@ -61,8 +65,13 @@ body {
 
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* IE 10+ */
-    overflow-y:auto; /* might need to be SCROLL */
+    overflow-y:hidden; /* might need to be SCROLL */
     overflow-x:hidden;
+}
+
+
+#displayedContent h1 {
+    font-family: 'Exo 2', sans-serif;
 }
 
 #main-image {
@@ -79,25 +88,31 @@ body {
 }
 
 #aboutContent {
-    text-align: center;
+    text-align: left;
     display: none;
     background: darkred;
     width: 96%;
     margin: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 1vh 1vw;
 }
 
 #projectsContent {
     text-align: center;
     display: none;
     background: darkgreen;
-
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #resumeContent {
     text-align: center;
     display: none;
     background: darkblue;
-
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* END of DISPLAYED CONTENT DIV ----------------------> */
@@ -108,6 +123,7 @@ body {
 #navigationButtons {
     /* border: brown 3px solid; */
     box-sizing: border-box;
+    padding-top: 1.5vh;
 
     display: flex;
     flex-flow: row;

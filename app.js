@@ -20,13 +20,15 @@ $( () => {
       $(this).css("background-color",defaultButtonColor)
       image.css("background-image",'url('+defaultImage+')')
       $("#aboutContent").hide()
+      $('#displayedContent').css('overflow-y','hidden')
     },
     "click" : function() { // IF user CLICKS, go to ACTUAL CONTENT
-      // $('#aboutTitle').animate({scrollTop: $("#aboutTitle").offset().top});
-      // $('#displayedContent').animate({scrollTop: $('#aboutTitle')[0].scrollHeight}, "slow");
-      // $('#displayedContent').scrollTop(400).offset().top
-      $('#displayedContent').scrollTop($('#aboutContent')[0].scrollHeight);}
-
+      $('#displayedContent').css('overflow-y','auto')
+      $('#displayedContent').animate({scrollTop: (10)}, "slow"); // -- SLOW show
+      // $('#displayedContent').animate({scrollTop: $('#aboutTitle')[0].scrollHeight}, "slow"); // -- SLOW show
+      // $('#displayedContent').scrollTop($('#aboutContent')[0].scrollHeight); // -- INSTANT
+    }
+      
   });
 
   $("#projectsButton").on({ // select PROJECT Button
@@ -42,6 +44,11 @@ $( () => {
       $(this).css("background-color",defaultButtonColor)
       image.css("background-image",'url('+defaultImage+')')
       $("#projectsContent").hide()
+    },
+    "click" : function() { // IF user CLICKS, go to ACTUAL CONTENT
+      $('#displayedContent').css('overflow-y','auto')
+      $('#displayedContent').animate({scrollTop: $('#projectsContent')[0].scrollHeight}, "slow");
+      // $('#displayedContent').scrollTop($('#projectsContent')[0].scrollHeight);
     }
     
   });
@@ -53,14 +60,17 @@ $( () => {
       $(this).css("background-color","darkblue") // set background for the Mouse Over'd button to GREEN
       image.css("background-image",'url("https://i.pinimg.com/originals/b4/e0/9a/b4e09ae68a2a2ae9fc3cee5349364e3a.jpg")') // change bg img for main img
       $("#resumeContent").show()
-
     },
     "mouseout" : function() { // undo everything
       var image = $("#main-image")
       $(this).css("background-color",defaultButtonColor)
       image.css("background-image",'url('+defaultImage+')')
       $("#resumeContent").hide()
-
+    },
+    "click" : function() { // IF user CLICKS, go to ACTUAL CONTENT
+      $('#displayedContent').css('overflow-y','auto')
+      $('#displayedContent').animate({scrollTop: $('#resumeContent')[0].scrollHeight}, "slow");
+      // $('#displayedContent').scrollTop($('#resumeContent')[0].scrollHeight);
     }
     
   });
