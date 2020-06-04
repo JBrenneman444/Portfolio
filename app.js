@@ -1,5 +1,12 @@
 $( () => {
     
+  var defaultButtonColor = "black"
+  var defaultImage = "https://i.pinimg.com/originals/70/b2/b1/70b2b1ff0604107e41af80be2a72ba35.png"
+
+  var selectedColor;
+  var selectedImage;
+
+
   $("#aboutButton").on({ // select ABOUT Button
     
     "mouseover" : function() { // on Mouse Over, do the following
@@ -10,10 +17,15 @@ $( () => {
     },
     "mouseout" : function() { // undo everything
       var image = $("#main-image")
-      $(this).css("background-color","black")
-      image.css("background-image",'url("https://i.pinimg.com/originals/70/b2/b1/70b2b1ff0604107e41af80be2a72ba35.png")')
+      $(this).css("background-color",defaultButtonColor)
+      image.css("background-image",'url('+defaultImage+')')
       $("#aboutContent").hide()
-    }
+    },
+    "click" : function() { // IF user CLICKS, go to ACTUAL CONTENT
+      // $('#aboutTitle').animate({scrollTop: $("#aboutTitle").offset().top});
+      // $('#displayedContent').animate({scrollTop: $('#aboutTitle')[0].scrollHeight}, "slow");
+      // $('#displayedContent').scrollTop(400).offset().top
+      $('#displayedContent').scrollTop($('#aboutContent')[0].scrollHeight);}
 
   });
 
@@ -27,8 +39,8 @@ $( () => {
     },
     "mouseout" : function() { // undo everything
       var image = $("#main-image")
-      $(this).css("background-color","black")
-      image.css("background-image",'url("https://i.pinimg.com/originals/70/b2/b1/70b2b1ff0604107e41af80be2a72ba35.png")')
+      $(this).css("background-color",defaultButtonColor)
+      image.css("background-image",'url('+defaultImage+')')
       $("#projectsContent").hide()
     }
     
@@ -45,8 +57,8 @@ $( () => {
     },
     "mouseout" : function() { // undo everything
       var image = $("#main-image")
-      $(this).css("background-color","black")
-      image.css("background-image",'url("https://i.pinimg.com/originals/70/b2/b1/70b2b1ff0604107e41af80be2a72ba35.png")')
+      $(this).css("background-color",defaultButtonColor)
+      image.css("background-image",'url('+defaultImage+')')
       $("#resumeContent").hide()
 
     }

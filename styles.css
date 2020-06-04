@@ -2,9 +2,14 @@ html {
     overflow: scroll;
     overflow-x: hidden;
 }
+
 ::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+    width: 5px;  /* Remove scrollbar space */
+    /* background: transparent;  Optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
 }
 
 body {
@@ -52,7 +57,12 @@ body {
     /* border: darkcyan 3px solid; */
     box-sizing: border-box;
     height: 62vh;
-    overflow: auto;
+    /* overflow: auto; */
+
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+    overflow-y:auto; /* might need to be SCROLL */
+    overflow-x:hidden;
 }
 
 #main-image {
