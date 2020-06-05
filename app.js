@@ -15,7 +15,21 @@ $( () => {
   // these will be DYNAMIC - each button will SELECT different CONTENT/IMAGE
   var selectedContent = 'default';
   var selectedImage = defaultImage;
-  // var toggleContent = 'OFF' DONT THINK I NEED THIS ACTUALLY....
+
+  var resetButtonColors = () => {
+    $("#aboutButton").css("background-color",defaultButtonColor)
+    $("#projectsButton").css("background-color",defaultButtonColor)
+    $("#resumeButton").css("background-color",defaultButtonColor)
+  }
+
+  var toggleSelectedContent = (currentContent) => {
+    if (selectedContent === currentContent) {
+      selectedContent = 'default'
+    } else {
+      selectedContent = currentContent
+    }
+    console.log('selectedContent is now: '+selectedContent)
+  }
 
     $("#aboutButton").on({ // select ABOUT Button
       
@@ -51,22 +65,16 @@ $( () => {
       "click" : function() { // IF user CLICKS, go to ACTUAL CONTENT
         $("#projectsContent").hide()
         $("#resumeContent").hide()
-        
 
         $('#displayedContent').css('overflow-y','auto')
         $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, 1200)
         $("#aboutContent").show()
 
-        // $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, "slow")
-        // $('#displayedContent').scrollTop($(window).scrollTop() + relativeScroll) // -- INSTANT
+        // resetButtonColors(about);
 
       // TODO: make selectedContent/selectedImage the SELECTED content/image
-        
-        if (selectedContent === 'about') {
-          selectedContent = 'default'
-        } else {
-          selectedContent = 'about'
-        }
+
+        toggleSelectedContent('about');
       
       }
         
@@ -117,11 +125,7 @@ $( () => {
 
       // TODO: make selectedContent/selectedImage the SELECTED content/image
         
-        if (selectedContent === 'projects') {
-          selectedContent = 'default'
-        } else {
-          selectedContent = 'projects'
-        }
+        toggleSelectedContent('projects');
       
       }
       
@@ -169,12 +173,8 @@ $( () => {
         // $('#displayedContent').scrollTop($(window).scrollTop() + relativeScroll) // -- INSTANT
 
       // TODO: make selectedContent/selectedImage the SELECTED content/image
-        
-        if (selectedContent === 'resume') {
-          selectedContent = 'default'
-        } else {
-          selectedContent = 'resume'
-        }
+  
+        toggleSelectedContent('resume');
       
       }
       
@@ -186,9 +186,10 @@ $( () => {
       $("#resumeContent").hide()
       selectedContent = 'default'
 
-      $("#aboutButton").css("background-color",defaultButtonColor)
-      $("#projectsButton").css("background-color",defaultButtonColor)
-      $("#resumeButton").css("background-color",defaultButtonColor)
+      resetButtonColors();
+      // $("#aboutButton").css("background-color",defaultButtonColor)
+      // $("#projectsButton").css("background-color",defaultButtonColor)
+      // $("#resumeButton").css("background-color",defaultButtonColor)
     }})
   
   });
