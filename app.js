@@ -37,6 +37,9 @@ $( () => {
 
   var toggleSelectedContent = (currentContent) => {
     if (selectedContent === currentContent) {
+      $("#aboutContent").hide()
+      $("#projectsContent").hide()
+      $("#resumeContent").hide()
       selectedContent = 'default'
     } else {
       selectedContent = currentContent
