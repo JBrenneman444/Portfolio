@@ -13,11 +13,13 @@ $( () => {
   var selectedContent = 'default';
   var selectedImage = defaultImage;
 
+  // $(".closeButton").on({"click":function(item){}})
+
   $("#aboutButton").on({ // select ABOUT Button
     
     "mouseover" : function() { // on Mouse Over, do the following
 
-      if (selectedContent === 'about' || 'default') {
+      if (selectedContent === 'about' || selectedContent === 'default') {
         console.log('selectedContent is ABOUT or DEFAULT')
         $(this).css("background-color","darkred") // set background for the Mouse Over'd button to GREEN
         $("#main-image").css("background-image",'url("https://i.pinimg.com/originals/6a/2f/67/6a2f67c1823fe82035f53db68fe27666.png")') // change bg img for main img
@@ -67,8 +69,8 @@ $( () => {
   $("#projectsButton").on({ // select PROJECT Button
     
     "mouseover" : function() { // on Mouse Over, do the following
-      
-      if (selectedContent === 'projects' || 'default') {
+      console.log(selectedContent)
+      if (selectedContent === 'projects' || selectedContent === 'default') {
         console.log('selectedContent is PROJECTS or DEFAULT')
         $(this).css("background-color","darkgreen") // set background for the Mouse Over'd button to GREEN
         $("#main-image").css("background-image",'url("https://images.emojiterra.com/google/android-pie/512px/1f914.png")') // change bg img for main img
@@ -111,7 +113,7 @@ $( () => {
     "mouseover" : function() { // on Mouse Over, do the following
 
 
-      if (selectedContent === 'resume' || 'default') {
+      if (selectedContent === 'resume' || selectedContent === 'default') {
         console.log('selectedContent is RESUME or DEFAULT')
         $(this).css("background-color","darkblue") // set background for the Mouse Over'd button to GREEN
         $("#main-image").css("background-image",'url("https://i.pinimg.com/originals/b4/e0/9a/b4e09ae68a2a2ae9fc3cee5349364e3a.jpg")') // change bg img for main img

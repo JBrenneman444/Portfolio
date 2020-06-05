@@ -1,6 +1,6 @@
-/* * {
+* {
     border: 1px solid yellow;
-} */
+}
 
 html {
     overflow: scroll;
@@ -87,17 +87,13 @@ body {
     color: crimson;
 }
 
-#dynamicContent {
-    text-align: left;
-    display: none;
-    /* background: darkred; */
-    width: 96%;
-    margin: auto;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5vh;
+.closeButton {
+    cursor: pointer;
 
-    padding: 1vh 1vw;
+    /* display: inline-block; */
+    width: fit-content;
+    text-align: right;
+    float: right;
 }
 
 #aboutContent {
@@ -112,6 +108,10 @@ body {
 
     padding: 1vh 1vw;
 }
+
+#aboutTitle {
+    margin-block-start: 0;
+} 
 
 #projectsContent {
     text-align: center;
