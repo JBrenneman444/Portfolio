@@ -14,9 +14,8 @@ $( () => {
 
   // these will be DYNAMIC - each button will SELECT different CONTENT/IMAGE
   var selectedContent = 'default';
-  var selectedImage = defaultImage;
 
-  var resetButtonColors = () => {
+  var setButtonColors = () => {
 
     if (selectedContent === 'about') {
       $("#projectsButton").css("background-color",defaultButtonColor)
@@ -63,18 +62,18 @@ $( () => {
           $("#main-image").css("background-image",tongueImage) // change bg img for main img
 
         } else {
-          console.log('selectedContent is NOT ABOUT or DEFAULT')
+          console.log('selectedContent is NOT ABOUT')
         }
 
       },
       "mouseout" : function() { // EXIT hover
 
-        if (selectedContent === 'about') {
-          // do nothing
-        } else {
+        if (selectedContent === 'default') {
           $(this).css("background-color",defaultButtonColor)
           $("#main-image").css("background-image",defaultImage)
           $("#aboutContent").hide()
+        } else {
+          // do nothing
         }
 
       },
@@ -82,16 +81,22 @@ $( () => {
         $("#projectsContent").hide()
         $("#resumeContent").hide()
 
-        $('#displayedContent').css('overflow-y','auto')
-        $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, 1200)
-        $("#aboutContent").show()
+        if (selectedContent === 'about') {
+          $('#displayedContent').css('overflow-y','auto')
+          $("#aboutContent").show()  
+        } else {
+          $('#displayedContent').css('overflow-y','auto')
+          $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, 1200)
+          $("#aboutContent").show()
+        }
 
-
-      // TODO: make selectedContent/selectedImage the SELECTED content/image
+        // just in case some other CONTENT is CLICKED BEFOREHAND
+        $(this).css("background-color","darkred")
+        $("#main-image").css("background-image",tongueImage) // 
 
         toggleSelectedContent('about');
-        resetButtonColors();
-      
+        setButtonColors();
+
       }
         
     });
@@ -113,19 +118,18 @@ $( () => {
           $("#main-image").css("background-image",thinkingImage) // change bg img for main img
 
         } else {
-          console.log('selectedContent is NOT projects or DEFAULT')
+          console.log('selectedContent is NOT projects')
         }
         
       },
       "mouseout" : function() { // EXIT hover
         
-
-        if (selectedContent === 'projects') {
-          // do nothing
-        } else {
+        if (selectedContent === 'default') {
           $(this).css("background-color",defaultButtonColor)
           $("#main-image").css("background-image",defaultImage)
           $("#projectsContent").hide()
+        } else {
+          // do nothing
         }
 
       },
@@ -133,17 +137,20 @@ $( () => {
         $("#aboutContent").hide()    
         $("#resumeContent").hide()
         
-        $('#displayedContent').css('overflow-y','auto')
-        $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, 1200)
-        $("#projectsContent").show()
+        if (selectedContent === 'projects') {
+          $('#displayedContent').css('overflow-y','auto')
+          $("#projectsContent").show()
+        } else {
+          $('#displayedContent').css('overflow-y','auto')
+          $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, 1200)
+          $("#projectsContent").show()
+        }
 
-        // $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, "slow")
-        // $('#displayedContent').scrollTop($(window).scrollTop() + relativeScroll) // -- INSTANT
-
-      // TODO: make selectedContent/selectedImage the SELECTED content/image
+        $(this).css("background-color","darkgreen") // set background for the Mouse Over'd button to GREEN
+        $("#main-image").css("background-image",thinkingImage) // 
         
         toggleSelectedContent('projects');
-        resetButtonColors();
+        setButtonColors();
 
       }
       
@@ -165,33 +172,40 @@ $( () => {
           $("#main-image").css("background-image",shockedImage) // change bg img for main img
 
         } else {
-          console.log('selectedContent is NOT resume or DEFAULT')
+          console.log('selectedContent is NOT resume')
         }
 
       },
       "mouseout" : function() { // EXIT hover
         
-        
-        if (selectedContent === 'resume') {
-          // do nothing
-        } else {
+        if (selectedContent === 'default') {
           $(this).css("background-color",defaultButtonColor)
           $("#main-image").css("background-image",defaultImage)
           $("#resumeContent").hide()
+        } else {
+          // do nothing
         }
+
       },
       "click" : function() { // IF user CLICKS, go to ACTUAL CONTENT
         $("#aboutContent").hide()    
         $("#projectsContent").hide()
-        
-        $('#displayedContent').css('overflow-y','auto')
-        $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, 1200)
-        $("#resumeContent").show()
 
-      // TODO: make selectedContent/selectedImage the SELECTED content/image
+        if (selectedContent === 'resume') {
+          $('#displayedContent').css('overflow-y','auto')
+          $("#resumeContent").show()
+        } else {
+          $('#displayedContent').css('overflow-y','auto')
+          $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, 1200)
+          $("#resumeContent").show()
+        }
+
+        $(this).css("background-color","darkblue") // set background for the Mouse Over'd button to GREEN
+        $("#main-image").css("background-image",shockedImage) // 
+
   
         toggleSelectedContent('resume');
-        resetButtonColors();
+        setButtonColors();
 
       }
       
@@ -203,10 +217,7 @@ $( () => {
       $("#resumeContent").hide()
       selectedContent = 'default'
 
-      resetButtonColors();
-      // $("#aboutButton").css("background-color",defaultButtonColor)
-      // $("#projectsButton").css("background-color",defaultButtonColor)
-      // $("#resumeButton").css("background-color",defaultButtonColor)
+      setButtonColors();
     }})
   
   });
