@@ -17,12 +17,16 @@ html {
 } */
 
 body {
+    
+    display: flex;
+    flex-flow: row nowrap;
+
     margin: 0;
     /* border: blue 5px solid; */
-    /* height: 95vh; */
     box-sizing: border-box;
 
     font-family: 'Exo 2', sans-serif;
+    
 }
 
 #container {
@@ -50,6 +54,11 @@ body {
     font-family: 'Exo 2', sans-serif;
     font-weight: 200;
     font-size:6vh;
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 /* END of NAME HEADER DIV */
@@ -104,6 +113,11 @@ h3 span {
 
     color: white;
     font-weight: 1000;
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 .subtitle {
@@ -187,6 +201,11 @@ h3 span {
     font-size:4vh;
 
     cursor: pointer;
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 #aboutButton {
@@ -203,3 +222,8 @@ h3 span {
 }
 /* END of NAVIGATION BUTTONS DIV ----------------------> */
 /* ======================================================================== */
+
+.outside-column {
+    width: 100%;
+}
+

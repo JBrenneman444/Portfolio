@@ -157,10 +157,10 @@ $( () => {
     });
 
     $("#resumeButton").on({ // select RESUME Button
-      
+
       // HOVER
       "mouseover" : function() { // on Mouse Over, do the following
-
+        
         if (selectedContent === 'resume') {
           console.log('selectedContent is RESUME')
           $(this).css("background-color","darkblue") // set background for the Mouse Over'd button to GREEN
@@ -188,6 +188,7 @@ $( () => {
 
       },
       "click" : function() { // IF user CLICKS, go to ACTUAL CONTENT
+                
         $("#aboutContent").hide()    
         $("#projectsContent").hide()
 
@@ -220,4 +221,13 @@ $( () => {
       setButtonColors();
     }})
   
+    $(".outside-column").on({"click":function() {
+      $("#aboutContent").hide()
+      $("#projectsContent").hide()
+      $("#resumeContent").hide()
+      selectedContent = 'default'
+
+      setButtonColors();
+    }})
+
   });
