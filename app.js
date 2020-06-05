@@ -17,9 +17,22 @@ $( () => {
   var selectedImage = defaultImage;
 
   var resetButtonColors = () => {
-    $("#aboutButton").css("background-color",defaultButtonColor)
-    $("#projectsButton").css("background-color",defaultButtonColor)
-    $("#resumeButton").css("background-color",defaultButtonColor)
+
+    if (selectedContent === 'about') {
+      $("#projectsButton").css("background-color",defaultButtonColor)
+      $("#resumeButton").css("background-color",defaultButtonColor)
+    } else if (selectedContent === 'projects') {
+      $("#aboutButton").css("background-color",defaultButtonColor)
+      $("#resumeButton").css("background-color",defaultButtonColor)
+    } else if (selectedContent === 'resume') {
+      $("#aboutButton").css("background-color",defaultButtonColor)
+      $("#projectsButton").css("background-color",defaultButtonColor)
+    } else {
+      $("#aboutButton").css("background-color",defaultButtonColor)
+      $("#projectsButton").css("background-color",defaultButtonColor)
+      $("#resumeButton").css("background-color",defaultButtonColor)
+    }
+
   }
 
   var toggleSelectedContent = (currentContent) => {
@@ -70,11 +83,11 @@ $( () => {
         $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, 1200)
         $("#aboutContent").show()
 
-        // resetButtonColors(about);
 
       // TODO: make selectedContent/selectedImage the SELECTED content/image
 
         toggleSelectedContent('about');
+        resetButtonColors();
       
       }
         
@@ -102,12 +115,13 @@ $( () => {
         
       },
       "mouseout" : function() { // EXIT hover
-        $(this).css("background-color",defaultButtonColor)
-        $("#main-image").css("background-image",defaultImage)
+        
 
         if (selectedContent === 'projects') {
           // do nothing
         } else {
+          $(this).css("background-color",defaultButtonColor)
+          $("#main-image").css("background-image",defaultImage)
           $("#projectsContent").hide()
         }
 
@@ -126,7 +140,8 @@ $( () => {
       // TODO: make selectedContent/selectedImage the SELECTED content/image
         
         toggleSelectedContent('projects');
-      
+        resetButtonColors();
+
       }
       
     });
@@ -152,12 +167,13 @@ $( () => {
 
       },
       "mouseout" : function() { // EXIT hover
-        $(this).css("background-color",defaultButtonColor)
-        $("#main-image").css("background-image",defaultImage)
+        
         
         if (selectedContent === 'resume') {
           // do nothing
         } else {
+          $(this).css("background-color",defaultButtonColor)
+          $("#main-image").css("background-image",defaultImage)
           $("#resumeContent").hide()
         }
       },
@@ -169,13 +185,11 @@ $( () => {
         $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, 1200)
         $("#resumeContent").show()
 
-        // $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, "slow")
-        // $('#displayedContent').scrollTop($(window).scrollTop() + relativeScroll) // -- INSTANT
-
       // TODO: make selectedContent/selectedImage the SELECTED content/image
   
         toggleSelectedContent('resume');
-      
+        resetButtonColors();
+
       }
       
     });
