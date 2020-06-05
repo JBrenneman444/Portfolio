@@ -39,6 +39,7 @@ $( () => {
       $("#aboutContent").hide()
       $("#projectsContent").hide()
       $("#resumeContent").hide()
+      $("#main-image").css("background-image",defaultImage)
       selectedContent = 'default'
     } else {
       selectedContent = currentContent
@@ -218,6 +219,7 @@ $( () => {
       $("#resumeContent").hide()
       selectedContent = 'default'
 
+      $("#main-image").css("background-image",defaultImage)
       setButtonColors();
     }})
   
@@ -227,6 +229,7 @@ $( () => {
       $("#resumeContent").hide()
       selectedContent = 'default'
 
+      $("#main-image").css("background-image",defaultImage)
       setButtonColors();
     }})
 
