@@ -13,7 +13,9 @@ $( () => {
   var selectedContent = 'default';
   var selectedImage = defaultImage;
 
-  // $(".closeButton").on({"click":function(item){}})
+  $(".closeButton").on({"click":function() {
+
+  }})
 
   $("#aboutButton").on({ // select ABOUT Button
     
@@ -28,9 +30,6 @@ $( () => {
         console.log('selectedContent is NOT ABOUT or DEFAULT')
       }
 
-      // $(this).css("background-color","darkred") // set background for the Mouse Over'd button to GREEN
-      // $("#main-image").css("background-image",'url("https://i.pinimg.com/originals/6a/2f/67/6a2f67c1823fe82035f53db68fe27666.png")') // change bg img for main img
-      // $("#aboutContent").show()
     },
     "mouseout" : function() { // undo everything
       $(this).css("background-color",defaultButtonColor)
