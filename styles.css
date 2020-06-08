@@ -94,30 +94,6 @@ h3 span {
     text-decoration-style: none;
     -moz-text-decoration-style: none;
 }
-/* 
-a:link {
-        text-decoration: none;
-        text-decoration-style: none;
-        -moz-text-decoration-style: none;
-    }
-
-a:visited {
-        text-decoration: none;
-        text-decoration-style: none;
-        -moz-text-decoration-style: none;
-    }
-
-a:hover {
-        text-decoration: none;
-        text-decoration-style: none;
-        -moz-text-decoration-style: none;
-    }
-
-a:active {
-        text-decoration: none;
-        text-decoration-style: none;
-        -moz-text-decoration-style: none;
-    } */
 
 #main-image {
     height: 62vh;
