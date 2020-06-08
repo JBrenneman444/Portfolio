@@ -89,6 +89,36 @@ h3 span {
     vertical-align: text-top;
 }
 
+.paperclip a:link, .paperclip a:visited, .paperclip a:hover, .paperclip a:active {
+    text-decoration: none;
+    text-decoration-style: none;
+    -moz-text-decoration-style: none;
+}
+/* 
+a:link {
+        text-decoration: none;
+        text-decoration-style: none;
+        -moz-text-decoration-style: none;
+    }
+
+a:visited {
+        text-decoration: none;
+        text-decoration-style: none;
+        -moz-text-decoration-style: none;
+    }
+
+a:hover {
+        text-decoration: none;
+        text-decoration-style: none;
+        -moz-text-decoration-style: none;
+    }
+
+a:active {
+        text-decoration: none;
+        text-decoration-style: none;
+        -moz-text-decoration-style: none;
+    } */
+
 #main-image {
     height: 62vh;
     background-image: url("https://i.pinimg.com/originals/70/b2/b1/70b2b1ff0604107e41af80be2a72ba35.png");
