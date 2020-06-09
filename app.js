@@ -87,7 +87,7 @@ $( () => {
           $("#aboutContent").show()  
         } else {
           $('#displayedContent').css('overflow-y','auto')
-          $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, 1200)
+          $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, 1000)
           $("#aboutContent").show()
         }
 
@@ -143,7 +143,7 @@ $( () => {
           $("#projectsContent").show()
         } else {
           $('#displayedContent').css('overflow-y','auto')
-          $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, 1200)
+          $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, 1000)
           $("#projectsContent").show()
         }
 
@@ -198,7 +198,7 @@ $( () => {
           $("#resumeContent").show()
         } else {
           $('#displayedContent').css('overflow-y','auto')
-          $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, 1200)
+          $('#displayedContent').animate({scrollTop: $(window).scrollTop() + relativeScroll}, 1000)
           $("#resumeContent").show()
         }
 
