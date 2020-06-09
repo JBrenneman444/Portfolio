@@ -132,6 +132,10 @@ h3 span {
     font-size: 1.5vh;
 }
 
+.dates {
+    margin-block-start: 0;
+    font-size: 1.75vh;
+}
         #aboutTitle {
             margin-block-start: 0;
             margin-block-end: 0;

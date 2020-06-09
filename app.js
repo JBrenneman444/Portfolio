@@ -9,8 +9,8 @@ $( () => {
   var defaultButtonColor = "black"
   var defaultImage = 'url("https://i.pinimg.com/originals/70/b2/b1/70b2b1ff0604107e41af80be2a72ba35.png")'
   var tongueImage = 'url("https://i.pinimg.com/originals/6a/2f/67/6a2f67c1823fe82035f53db68fe27666.png")'
-  var thinkingImage = 'url("https://images.emojiterra.com/google/android-pie/512px/1f914.png")'
-  var shockedImage = 'url("https://i.pinimg.com/originals/b4/e0/9a/b4e09ae68a2a2ae9fc3cee5349364e3a.jpg")'
+  var thinkingImage = 'url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fres.cloudinary.com%2Fteepublic%2Fimage%2Fprivate%2Fs--pgo79wDS--%2Ft_Preview%2Fb_rgb%3Affffff%2Cc_limit%2Cf_jpg%2Ch_630%2Cq_90%2Cw_630%2Fv1541641509%2Fproduction%2Fdesigns%2F3463685_0.jpg&f=1&nofb=1")'
+  var smartImage = 'url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F1061%2F1924%2Fproducts%2FNerd_Emoji_Icon_4ab932f8-9ec9-4180-8420-c74b84546f57_grande.png%3Fv%3D1513249392&f=1&nofb=1")'
 
   // these will be DYNAMIC - each button will SELECT different CONTENT/IMAGE
   var selectedContent = 'default';
@@ -165,12 +165,12 @@ $( () => {
         if (selectedContent === 'resume') {
           console.log('selectedContent is RESUME')
           $(this).css("background-color","darkblue") // set background for the Mouse Over'd button to GREEN
-          $("#main-image").css("background-image",shockedImage) // change bg img for main img
+          $("#main-image").css("background-image",smartImage) // change bg img for main img
           $("#resumeContent").show()
         } else if (selectedContent === 'default') {
           console.log('selectedContent is DEFAULT')
           $(this).css("background-color","darkblue") // set background for the Mouse Over'd button to GREEN
-          $("#main-image").css("background-image",shockedImage) // change bg img for main img
+          $("#main-image").css("background-image",smartImage) // change bg img for main img
 
         } else {
           console.log('selectedContent is NOT resume')
@@ -203,7 +203,7 @@ $( () => {
         }
 
         $(this).css("background-color","darkblue") // set background for the Mouse Over'd button to GREEN
-        $("#main-image").css("background-image",shockedImage) // 
+        $("#main-image").css("background-image",smartImage) // 
 
   
         toggleSelectedContent('resume');
