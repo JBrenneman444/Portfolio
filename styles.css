@@ -154,7 +154,7 @@ h3 span {
     display: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5vh;
+    font-size: 1.75vh;
 
     padding: 1vh 2vw;
 }
@@ -179,6 +179,10 @@ h2 {
 
 .projectTitle a {
     color: white;
+}
+
+.projectTitle-disabled {
+    color: rgb(138, 138, 138);
 }
 
 #resumeContent {
