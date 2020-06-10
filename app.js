@@ -7,15 +7,10 @@ $( () => {
 
   var defaultButtonColor = "black"
 
-  // var defaultImage = 'url("https://i.pinimg.com/originals/70/b2/b1/70b2b1ff0604107e41af80be2a72ba35.png")' // sunglasses
-  // var tongueImage = 'url("https://i.pinimg.com/originals/6a/2f/67/6a2f67c1823fe82035f53db68fe27666.png")'
-  // var thinkingImage = 'url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fres.cloudinary.com%2Fteepublic%2Fimage%2Fprivate%2Fs--pgo79wDS--%2Ft_Preview%2Fb_rgb%3Affffff%2Cc_limit%2Cf_jpg%2Ch_630%2Cq_90%2Cw_630%2Fv1541641509%2Fproduction%2Fdesigns%2F3463685_0.jpg&f=1&nofb=1")'
-  // var smartImage = 'url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F1061%2F1924%2Fproducts%2FNerd_Emoji_Icon_4ab932f8-9ec9-4180-8420-c74b84546f57_grande.png%3Fv%3D1513249392&f=1&nofb=1")'
-
-  var defaultImage = 'url("https://i.postimg.cc/fytqkv8Z/test.png")'
-  var tongueImage = 'url("https://i.postimg.cc/xThrnXTL/red-test.png")'
-  var thinkingImage = 'url("https://i.postimg.cc/fTJ4GcZw/green-test.png")'
-  var smartImage = 'url("https://i.postimg.cc/Y2XKDX5n/blue-test.png")'
+  var defaultImage = 'url("img/test.png")'
+  var tongueImage = 'url("img/red-test.png")'
+  var thinkingImage = 'url("img/green-test.png")'
+  var smartImage = 'url("img/blue-test.png")'
 
   // these will be DYNAMIC - each button will SELECT different CONTENT/IMAGE
   var selectedContent = 'default';
