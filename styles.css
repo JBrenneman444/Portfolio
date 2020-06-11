@@ -1,6 +1,6 @@
-/* * {
+* {
     border: 1px solid yellow;
-} */
+}
 
 html {
     overflow: scroll;
@@ -92,6 +92,25 @@ h2 span {
 h3 span {
     font-size: 2vh;
     vertical-align: text-top;
+}
+
+#contact-div {
+    text-align: center;
+}
+
+#contact-me {
+    color: black;
+    font-size: 1.5vh;
+}
+
+#message-icon {
+    font-size: 2vh;
+}
+
+#message-icon:link, #message-icon:visited, #message-icon:hover, #message-icon:active {
+    text-decoration: none;
+    text-decoration-style: none;
+    -moz-text-decoration-style: none;
 }
 
 .paperclip a:link, .paperclip a:visited, .paperclip a:hover, .paperclip a:active {
