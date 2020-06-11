@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px solid yellow;
-}
+} */
 
 html {
     overflow: scroll;
@@ -86,7 +86,6 @@ body {
 
 h2 span {
     font-size: 2.5vh;
-    vertical-align: text-top;
 }
 
 h3 span {
@@ -117,6 +116,21 @@ h3 span {
     text-decoration: none;
     text-decoration-style: none;
     -moz-text-decoration-style: none;
+}
+
+.head-paperclip > a:link, .head-paperclip > a:visited, .head-paperclip > a:hover, .head-paperclip > a:active {
+    vertical-align: text-top;
+    font-size: 1.5vh;
+
+    text-decoration: none;
+    text-decoration-style: none;
+    -moz-text-decoration-style: none;
+}
+
+#PDF, #GitHub {
+    color: white;
+    font-family: 'Exo 2';
+    font-size: 2vh;
 }
 
 #main-image {
@@ -222,6 +236,11 @@ h2 {
     padding: 1vh 2vw;
 }
 
+#projectsTitle a {
+    color: white;
+    font-size: 2.5vh;
+}
+
 .projectTitle a {
     color: white;
 }
@@ -232,6 +251,7 @@ h2 {
 
 #resumeTitle a {
     color: white;
+    font-size: 2.5vh;
 }
 
 .resumeTitle a {
