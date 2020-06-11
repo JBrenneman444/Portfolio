@@ -44,7 +44,7 @@ $( () => {
     } else {
       selectedContent = currentContent
     }
-    console.log('selectedContent is now: '+selectedContent)
+    // console.log('selectedContent is now: '+selectedContent)
   }
 
     $("#aboutButton").on({ // select ABOUT Button
@@ -53,17 +53,17 @@ $( () => {
       "mouseover" : function() { // on Mouse Over, do the following
 
         if (selectedContent === 'about') {
-          console.log('selectedContent is ABOUT')
+          // console.log('selectedContent is ABOUT')
           $(this).css("background-color","darkred") // set background for the Mouse Over'd button to GREEN
           $("#main-image").css("background-image",tongueImage) // change bg img for main img
           $("#aboutContent").show()
         } else if (selectedContent === 'default') {
-          console.log('selectedContent is DEFAULT')
+          // console.log('selectedContent is DEFAULT')
           $(this).css("background-color","darkred") // set background for the Mouse Over'd button to GREEN
           $("#main-image").css("background-image",tongueImage) // change bg img for main img
 
         } else {
-          console.log('selectedContent is NOT ABOUT')
+          // console.log('selectedContent is NOT ABOUT')
         }
 
       },
@@ -106,20 +106,20 @@ $( () => {
       
       // HOVER
       "mouseover" : function() { // on Mouse Over, do the following
-        console.log(selectedContent)
+        // console.log(selectedContent)
         
         if (selectedContent === 'projects') {
-          console.log('selectedContent is PROJECTS')
+          // console.log('selectedContent is PROJECTS')
           $(this).css("background-color","darkgreen") // set background for the Mouse Over'd button to GREEN
           $("#main-image").css("background-image",thinkingImage) // change bg img for main img
           $("#projectsContent").show()
         } else if (selectedContent === 'default') {
-          console.log('selectedContent is DEFAULT')
+          // console.log('selectedContent is DEFAULT')
           $(this).css("background-color","darkgreen") // set background for the Mouse Over'd button to GREEN
           $("#main-image").css("background-image",thinkingImage) // change bg img for main img
 
         } else {
-          console.log('selectedContent is NOT projects')
+          // console.log('selectedContent is NOT projects')
         }
         
       },
@@ -163,17 +163,17 @@ $( () => {
       "mouseover" : function() { // on Mouse Over, do the following
         
         if (selectedContent === 'resume') {
-          console.log('selectedContent is RESUME')
+          // console.log('selectedContent is RESUME')
           $(this).css("background-color","darkblue") // set background for the Mouse Over'd button to GREEN
           $("#main-image").css("background-image",smartImage) // change bg img for main img
           $("#resumeContent").show()
         } else if (selectedContent === 'default') {
-          console.log('selectedContent is DEFAULT')
+          // console.log('selectedContent is DEFAULT')
           $(this).css("background-color","darkblue") // set background for the Mouse Over'd button to GREEN
           $("#main-image").css("background-image",smartImage) // change bg img for main img
 
         } else {
-          console.log('selectedContent is NOT resume')
+          // console.log('selectedContent is NOT resume')
         }
 
       },
