@@ -312,7 +312,7 @@ li {
 }
 
 #container {
-    border: crimson 5px solid;
+    /* border: crimson 5px solid; */
     height: 91vh;
     margin: 5vh auto 0 auto;
     box-sizing: border-box;
