@@ -123,7 +123,7 @@ h3 span {
     height: 62vh;
     /* background-image: url("https://i.pinimg.com/originals/70/b2/b1/70b2b1ff0604107e41af80be2a72ba35.png"); */
     background-image: url("img/test.png");
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -363,7 +363,8 @@ li {
     }
     
     #container {
-        width: 90%;
+        width: 100%;
+        margin: 8vh auto 0 auto;
     }
 
     #nameHeader {
@@ -372,11 +373,11 @@ li {
     }
 
     #displayedContent {
-        height: 30vh;
+        height: 33vh;
     }
 
     #main-image {
-        height: 30vh;
+        height: 33vh;
     }
 
     #navigationButtons {
