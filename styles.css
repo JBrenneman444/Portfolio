@@ -327,8 +327,64 @@ li {
     }
 }
 
-@media all and (orientation:portrait) {  
+@media all and (max-device-width : 789px) and (orientation:portrait) {  
+    .outside-column {
+        width: 0;
+    }
+    
+    #container {
+        max-width: 70%;
+    }
+
+    #nameHeader {
+        font-size: 2.4em;
+    }
+
+    #displayedContent {
+        height: 60vh;
+    }
+
+    #main-image {
+        height: 60vh;
+    }
+
+    #navigationButtons {
+        padding-top: 0;
+    }
+
+    .main-buttons {
+        font-size: 2em;
+    }
+}
+
+@media all and (max-device-width : 400px) and (orientation:portrait) {
+    .outside-column {
+        width: 0;
+    }
+    
     #container {
         width: 90%;
+    }
+
+    #nameHeader {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+
+    #displayedContent {
+        height: 30vh;
+    }
+
+    #main-image {
+        height: 30vh;
+    }
+
+    #navigationButtons {
+        padding-top: 0;
+    }
+
+    .main-buttons {
+        font-size: 1em;
+        font-weight: 700;
     }
 }
