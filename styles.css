@@ -357,6 +357,16 @@ li {
     }
 }
 
+@media all and (max-device-width : 582px) and (orientation:portrait) {
+    #displayedContent {
+        height: 45vh;
+    }
+
+    #main-image {
+        height: 45vh;
+    }
+}
+
 @media all and (max-device-width : 400px) and (orientation:portrait) {
     .outside-column {
         width: 0;
