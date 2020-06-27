@@ -38,11 +38,29 @@ body {
 
     background-color: black;
     color: white;
-    padding: 5vh 0;
+    padding: 5vh 0 0 0;
 
     font-family: 'Exo 2', sans-serif;
     font-weight: 200;
     font-size:3.5em;
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+#jobtitle {
+    /* margin-top: 20px; */
+    text-align: center;
+
+    background-color: black;
+    color: white;
+    padding: 0.75vh 0 2.25vh 0;
+
+    font-family: 'Exo 2', sans-serif;
+    font-weight:700;
+    font-size:1.15em;
 
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
@@ -337,7 +355,13 @@ li {
     }
 
     #nameHeader {
+        padding: 5vh 0;
         font-size: 2.4em;
+    }
+
+    #jobtitle {
+        display: none;
+        /* font-size: 1.5em; */
     }
 
     #displayedContent {
@@ -378,8 +402,13 @@ li {
     }
 
     #nameHeader {
+        padding: 5vh 0;
         font-size: 1.5em;
         font-weight: 700;
+    }
+
+    #jobtitle {
+        display:none;
     }
 
     #displayedContent {
