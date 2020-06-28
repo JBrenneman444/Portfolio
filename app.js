@@ -1,8 +1,11 @@
 $( () => {
-
+  
+  // $('#jobtitle').delay(1000).animate({"opacity":"1"}, 700);​
+  $("#jobtitle").fadeIn(3000);
+  
   // this enables RELATIVE scrolling, based on USER's INITIAL screen size
     // TODO: if they CHANGE the screen size, it still uses INITIAL screen size..... ???
-  var windowHeight = $(window).height(); // value in pixels
+    var windowHeight = $(window).height(); // value in pixels
   var relativeScroll = windowHeight * .55
 
   var defaultButtonColor = "black"
