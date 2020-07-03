@@ -3,7 +3,7 @@ $( () => {
   // this enables RELATIVE scrolling, based on USER's INITIAL screen size
     // TODO: if they CHANGE the screen size, it still uses INITIAL screen size..... ???
     var windowHeight = $(window).height(); // value in pixels
-  var relativeScroll = windowHeight * .55
+  var relativeScroll = windowHeight * .40
 
   var defaultButtonColor = "black"
 
