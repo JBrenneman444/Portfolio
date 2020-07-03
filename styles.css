@@ -402,12 +402,22 @@ li {
 }
 
 @media all and (max-device-width : 582px) and (orientation:portrait) {
-    #displayedContent {
-        height: 45vh;
+    
+    #container {
+        max-width: 100%;
+        width: 100vw;
+        margin: 0 0 0 0;
     }
 
-    #main-image {
-        height: 45vh;
+    #nameHeader {
+        padding: 5vh 0;
+        font-size: 1.5em;
+        font-weight: 700;
+        width: 100vw;
+    }
+    
+    #displayedContent {
+        height: 60vh;
     }
 }
 
@@ -417,14 +427,16 @@ li {
     }
     
     #container {
-        width: 100%;
-        margin: 8vh auto 0 auto;
+        max-width: 100%;
+        width: 100vw;
+        margin: 0 0 0 0;
     }
 
     #nameHeader {
         padding: 5vh 0;
         font-size: 1.5em;
         font-weight: 700;
+        width: 100vw;
     }
 
     #jobtitle-div {
@@ -436,11 +448,12 @@ li {
     }
 
     #displayedContent {
-        height: 40vh;
+        /* width: 100vw; */
+        height: 70vh;
     }
 
     #main-image {
-        height: 40vh;
+        height: 70vh;
     }
 
     #navigationButtons {
@@ -450,6 +463,20 @@ li {
     .main-buttons {
         font-size: 1em;
         font-weight: 700;
+        padding: 3vh 2vw;
+        width: -webkit-fill-available;
+        text-align: center;
+    }
+
+    #projectsButton {
+        margin-left: unset;
+        margin-right: unset;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+    }
+
+    #contact-div {
+        display: none;
     }
 }
 
