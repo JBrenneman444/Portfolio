@@ -9,12 +9,7 @@ html {
 
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
-    /* background: transparent;  Optional: just make scrollbar invisible */
 }
-
-/* ::-webkit-scrollbar-thumb {
-    background: black;
-} */
 
 body {
     
@@ -155,7 +150,6 @@ h3 span {
 
 #main-image {
     height: 62vh;
-    /* background-image: url("https://i.pinimg.com/originals/70/b2/b1/70b2b1ff0604107e41af80be2a72ba35.png"); */
     background-image: url("img/test.png");
     background-position: center top;
     background-repeat: no-repeat;
@@ -269,8 +263,79 @@ h2 {
     color: rgb(138, 138, 138);
 }
 
+.screenshots {
+    border: 1px solid white;
+    height: 40vh;
+}
+
+.trans-overlay {
+    background: rgba(0, 44, 0, 0.7);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 40vh;
+}
+
+.trans-overlay > h2, .trans-overlay > p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+    /* line-height: 40vh; */
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.trans-overlay:hover {
+    background: transparent;
+    color: transparent;
+}
+
+#screenshot-JustUs {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("img/screenshot1.PNG");
+    fill-opacity: .5;
+}
+
+#screenshot-Age {
+    background-image: url("img/screenshot2.PNG");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#screenshot-Bucket {
+    background-image: url("img/screenshot3.PNG");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#screenshot-PPL {
+    background-image: url("img/screenshot4.PNG");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#screenshot-Gamer {
+    background-image: url("img/screenshot5.PNG");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#screenshot-Homework {
+
+}
+
 #resumeTitle a {
-    color: white;
+    color:white;
     font-size: 2.5vh;
 }
 
