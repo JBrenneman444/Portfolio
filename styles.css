@@ -269,12 +269,13 @@ h2 {
 }
 
 .trans-overlay {
-    background: rgba(0, 44, 0, 0.7);
+    background: rgba(0, 59, 0, 0.7);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 40vh;
+    height:-webkit-fill-available;
+    padding-top: 34%;
 }
 
 .trans-overlay > h2, .trans-overlay > p {
@@ -292,6 +293,7 @@ h2 {
 .trans-overlay:hover {
     background: transparent;
     color: transparent;
+    cursor: pointer;
 }
 
 #screenshot-JustUs {
