@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio of Jake Brenneman</title>
@@ -9,10 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- FAV ICON -->
-    <link rel="icon" type="image/png" href="img/JB.png"/>
+    <link rel="icon" type="image/png" href="img/JB.png">
 
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400&amp;display=swap" rel="stylesheet">
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -22,14 +20,21 @@
 <body>
     <div class="outside-column"></div>
     <div id="container">
-        <div id="nameHeader">jake brenneman</div>
-        <div id="jobtitle-div"><span id="jobtitle">FULL STACK DEVELOPER</span></div>
-        <div id="displayedContent">
-            <div id="main-image">
-                <!-- BG img changes based on HOVER or CLICK -->
+        <div id="nameHeader">
+            <div id="full-name">jake brenneman</div>
+            <div id="jobtitle-div"><span id="jobtitle">FULL STACK DEVELOPER</span></div>
+        </div>
+
+    <!-- </div> -->
+        
+        <div id="displayedContent" style="overflow-y: auto;">
+            <!-- BG img changes based on HOVER or CLICK 
+<div id="main-image" style="background-image: url(&quot;img/red-test.png&quot;);">
+
             </div>
+-->
                 <div class="closeButton">X</div>
-                <div id="aboutContent">
+                <div id="aboutContent" style="display: none;">
 
                     <h2 id="aboutTitle">About Jake</h2>
                     
@@ -47,14 +52,14 @@
                 </div>
 
             <!-- PROJECTS content-->
-                <div id="projectsContent">
+                <div id="projectsContent" style="display: none;">
 
                     <h2 id="projectsTitle">Projects</h2>
                     
                     <a id="GitHub" href="https://github.com/JBrenneman444" target="_blank">GitHub</a>
                     <span class="head-paperclip"><a href="https://github.com/JBrenneman444" target="_blank"> 🔗</a></span>
                     
-                    <h3 class='projectTitle'><a href="https://www.mallendesigns.com" target="_blank">Michael Allen Designs</a>
+                    <h3 class="projectTitle"><a href="https://www.mallendesigns.com" target="_blank">Michael Allen Designs</a>
                         <span class="paperclip"><a href="https://www.mallendesigns.com" target="_blank"> 🔗</a></span></h3>
                     <p class="subtitle">A professional portfolio for an architectural metalworker, sculptor, and artist.</p>
                     <p><b>Skills used</b>: HTML, CSS, JavaScript, jQuery.</p>
@@ -66,13 +71,13 @@
                         <li>Taught myself how to use data attributes in HTML and JavaScript to dynamically display any selected photo out of an array of photos.</li>
                     </ul>
                     <div class="screenshots" id="screenshot-Mallen">
-                        <div class="trans-overlay" onClick="parent.open('img/screenshot6.PNG')">
+                        <div class="trans-overlay" onclick="parent.open('img/screenshot6.PNG')">
                             <h2>Michael Allen Designs</h2>
                             <p>click for full size image</p>
                         </div>
                     </div>
                     
-                    <h3 class='projectTitle'><a href="https://github.com/JBrenneman444/JustUs" target="_blank">JustUs -- a Student Project</a>
+                    <h3 class="projectTitle"><a href="https://github.com/JBrenneman444/JustUs" target="_blank">JustUs -- a Student Project</a>
                         <span class="paperclip"><a href="https://github.com/JBrenneman444/JustUs" target="_blank"> 🔗</a></span></h3>
                     <p class="subtitle">A full-stack app for couples.</p>
                     <p><b>Skills used</b>: HTML, CSS, JavaScript, Node.JS, Express, Mongoose (one-to-many), MongoLab, React Bootstrap, SASS.</p>
@@ -84,13 +89,13 @@
                         <li>Figuring out how to structure React Bootstrap's form commponents while passing down and lifting state was challenging.</li>
                     </ul>
                     <div class="screenshots" id="screenshot-JustUs">
-                        <div class="trans-overlay" onClick="parent.open('img/screenshot1.PNG')">
+                        <div class="trans-overlay" onclick="parent.open('img/screenshot1.PNG')">
                             <h2>JustUs</h2>
                             <p>click for full size image</p>
                         </div>
                     </div>
                     
-                    <h3 class='projectTitle'><a href="https://github.com/JBrenneman444/aoe_front_end" target="_blank">Age of Empires Tribute -- a Student Project</a>
+                    <h3 class="projectTitle"><a href="https://github.com/JBrenneman444/aoe_front_end" target="_blank">Age of Empires Tribute -- a Student Project</a>
                         <span class="paperclip"><a href="https://github.com/JBrenneman444/aoe_front_end" target="_blank"> 🔗</a></span></h3>
                     <p class="subtitle">A full-stack app and tribute to one of the greatest games ever made.</p>
                     <p><b>Skills used</b>: HTML, CSS, JavaScript, React.js, Ruby on Rails, PostgreSQL, CORS, SASS.</p>
@@ -101,13 +106,13 @@
                         <li>Figuring out how to add to an array via form fields was challenging.</li>
                     </ul>
                     <div class="screenshots" id="screenshot-Age">
-                        <div class="trans-overlay" onClick="parent.open('img/screenshot2.PNG')">
+                        <div class="trans-overlay" onclick="parent.open('img/screenshot2.PNG')">
                             <h2>Age of Empires Tribute</h2>
                             <p>click for full size image</p>
                         </div>
                     </div>
 
-                    <h3 class='projectTitle'><a href="https://github.com/ahuiban/project3-frontEnd" target="_blank">BucketList -- a Student Project</a>
+                    <h3 class="projectTitle"><a href="https://github.com/ahuiban/project3-frontEnd" target="_blank">BucketList -- a Student Project</a>
                         <span class="paperclip"><a href="https://github.com/ahuiban/project3-frontEnd" target="_blank"> 🔗</a></span></h3>
                     <p class="subtitle">A full-stack app for making bucket lists.</p>
                     <p><b>Skills used</b>: HTML, CSS, JavaScript, Node.js, Express, Mongoose, React.</p>
@@ -119,30 +124,13 @@
                         <li>I created the logo.</li>
                     </ul>
                     <div class="screenshots" id="screenshot-Bucket">
-                        <div class="trans-overlay" onClick="parent.open('img/screenshot3.PNG')">
+                        <div class="trans-overlay" onclick="parent.open('img/screenshot3.PNG')">
                             <h2>BucketList</h2>
                             <p>click for full size image</p>
                         </div>
                     </div>
 
-                    <h3 class='projectTitle'><a href="https://github.com/JBrenneman444/PPLpleaser" target="_blank">PPLpleaser -- a Student Project</a>
-                        <span class="paperclip"><a href="https://github.com/JBrenneman444/PPLpleaser" target="_blank"> 🔗</a></span></h3>
-                    <p class="subtitle">A full-stack and light-hearted polling website.</p>
-                    <p><b>Skills used</b>: HTML, CSS, JavaScript, Node.js, Mongoose, Express, EJS.</p>
-
-                    <ul>
-                        <li>My goal for the design of PPLpleaser was to keep it simple/minimalistic.</li>
-                        <li>Originally, tried to updated each individual contest via subarrays.</li>
-                        <li>Eventually, ended up creating a whole new model which allowed me to query it specifically. This aspect of the assignment was th emost challenging for me.</li></li>
-                    </ul>
-                    <div class="screenshots" id="screenshot-PPL">
-                        <div class="trans-overlay" onClick="parent.open('img/screenshot4.PNG')">
-                            <h2>PPLpleaser</h2>
-                            <p>click for full size image</p>
-                        </div>
-                    </div>
-
-                    <h3 class='projectTitle'><a href="https://github.com/JBrenneman444/VideoGameCharacterIndex" target="_blank">Gamerdex -- a Student Project</a>
+                    <h3 class="projectTitle"><a href="https://github.com/JBrenneman444/VideoGameCharacterIndex" target="_blank">Gamerdex -- a Student Project</a>
                         <span class="paperclip"><a href="https://github.com/JBrenneman444/VideoGameCharacterIndex" target="_blank"> 🔗</a></span></h3>
                     <p class="subtitle">An index of various video game characters across the gaming universe.</p>
                     <p><b>Skills used</b>: HTML, CSS, JavaScript, jQuery.</p>
@@ -153,7 +141,7 @@
                         <li><strong>NOTE:</strong> Will not work on Safari browser - need to fix the 'show' and 'hide'.</li>
                     </ul>
                     <div class="screenshots" id="screenshot-Gamer">
-                        <div class="trans-overlay" onClick="parent.open('img/screenshot5.PNG')">
+                        <div class="trans-overlay" onclick="parent.open('img/screenshot5.PNG')">
                             <h2>Gamerdex</h2>
                             <p>click for full size image</p>
                         </div>
@@ -162,12 +150,12 @@
                 </div>
 
             <!-- RESUME content-->
-                <div id="resumeContent">
+                <div id="resumeContent" style="display: none;">
                     <h2 id="resumeTitle">Resume</h2>
-                    <a id="PDF" href="https://drive.google.com/file/d/1579cD4AH39q2ejGcz-AAOsuCqO9aa-V1/view?usp=sharing"  target="_blank">PDF</a>
+                    <a id="PDF" href="https://drive.google.com/file/d/1579cD4AH39q2ejGcz-AAOsuCqO9aa-V1/view?usp=sharing" target="_blank">PDF</a>
                     <span class="head-paperclip"><a href="https://drive.google.com/file/d/1579cD4AH39q2ejGcz-AAOsuCqO9aa-V1/view?usp=sharing" target="_blank"> 🔗</a></span>
 
-                    <h3 class='resumeTitle'><a href="https://generalassemb.ly/" target="_blank">General Assembly</a>
+                    <h3 class="resumeTitle"><a href="https://generalassemb.ly/" target="_blank">General Assembly</a>
                         <span class="paperclip"><a href="https://generalassemb.ly/" target="_blank"> 🔗</a></span></h3>
                     <p class="subtitle">A coding boot camp, aimed at training full stack developers.</p>
                     <p class="jobdates"><span>Student of Full Stack Development</span> - <b>DEC 2019</b> to <b>MAY 2020</b></p>
@@ -177,7 +165,7 @@
                         <li>Developed a portfolio of 5 individually and collaboratively focused in-class projects which required roughly 15-20 hours+ each.</li>
                     </ul>
 
-                    <h3 class='resumeTitle'><a href="https://www.yoh.com/" target="_blank">Yoh Services</a>
+                    <h3 class="resumeTitle"><a href="https://www.yoh.com/" target="_blank">Yoh Services</a>
                         <span class="paperclip"><a href="https://www.yoh.com/" target="_blank"> 🔗</a></span></h3>
                     <p class="subtitle">A recruiting agency.</p>
                     <p class="jobdates"><span>Gaming Recruiter</span> - <b>SEP 2017</b> to <b>PRESENT</b></p>
@@ -188,7 +176,7 @@
                         <li>Negotiated pay with both client companies and contractors.</li>
                     </ul>
 
-                    <h3 class='resumeTitle'><a href="https://www.evhc.net/" target="_blank">Envision Healthcare</a>
+                    <h3 class="resumeTitle"><a href="https://www.evhc.net/" target="_blank">Envision Healthcare</a>
                         <span class="paperclip"><a href="https://www.evhc.net/" target="_blank"> 🔗</a></span></h3>
                     <p class="subtitle">A healthcare company.</p>
                     <p class="jobdates"><span>Corporate Recruiter</span> - <b>AUG 2014</b> to <b>MAR 2017</b></p>
@@ -196,7 +184,7 @@
                         <li><strong>Quick summary</strong>: Recruited on all kinds of corporate roles and, occasionally, on medically-focused roles as well.</li>
                     </ul>
 
-                    <h3 class='resumeTitle'><a href="https://www.onvia.com/" target="_blank">Onvia</a>
+                    <h3 class="resumeTitle"><a href="https://www.onvia.com/" target="_blank">Onvia</a>
                         <span class="paperclip"><a href="https://www.onvia.com/" target="_blank"> 🔗</a></span></h3>
                     <p class="subtitle">A service for businesses selling to the public sector.</p>
                     <p class="jobdates"><span>HR Assistant</span> - <b>JAN 2014</b> to <b>APR 2014</b></p>
@@ -204,7 +192,7 @@
                         <li><strong>Quick summary</strong>: Provided general HR and receptionist support.</li>
                     </ul>
 
-                    <h3 class='resumeTitle'><a href="https://www.slstart.com/" target="_blank">SL Start and Associates</a>
+                    <h3 class="resumeTitle"><a href="https://www.slstart.com/" target="_blank">SL Start and Associates</a>
                         <span class="paperclip"><a href="https://www.slstart.com/" target="_blank"> 🔗</a></span></h3>
                     <p class="subtitle">A social services company for developmentally disabled persons.</p>
                     <p class="jobdates"><span>HR Associate</span> - <b>OCT 2012</b> to <b>NOV 2013</b></p>
@@ -212,7 +200,7 @@
                         <li><strong>Quick summary</strong>: Provided general HR support.</li>
                     </ul>
 
-                    <h3 class='resumeTitle'><a href="https://www.uoregon.edu/" target="_blank">UOHRA (<font size="3vh">UO Human Resources Association</font>)</a>
+                    <h3 class="resumeTitle"><a href="https://www.uoregon.edu/" target="_blank">UOHRA (<font size="3vh">UO Human Resources Association</font>)</a>
                         <span class="paperclip"><a href="https://www.uoregon.edu/" target="_blank"> 🔗</a></span></h3>
                     <p class="subtitle">A student organization for aspiring HR professionals at the University of Oregon.</p>
                     <p class="jobdates"><span>Cofounder</span> - <b>APR 2011</b> to <b>JUN 2012</b></p>
@@ -224,19 +212,15 @@
                 </div>
         </div>
         <div id="navigationButtons">
-            <div id="aboutButton" class="main-buttons">about</div>
-            <div id="projectsButton" class="main-buttons">projects</div>
-            <div id="resumeButton" class="main-buttons">resume</div>
+            <div id="aboutButton" class="main-buttons" style="background-color: black;">about</div>
+            <div id="projectsButton" class="main-buttons" style="background-color: black;">work</div>
+            <div id="resumeButton" class="main-buttons" style="background-color: black;">resume</div>
         </div>
 
-        <div id="contact-div">
-            
-                <a id="contact-me" href="mailto:JBrenneman444@gmail.com">contact me</a><a id="message-icon" href="mailto:JBrenneman444@gmail.com"> 📧</a>
-            
-        </div>
+        
 
     </div>
     <div class="outside-column"></div>
 
-</body>
-</html>
+
+</body></html>

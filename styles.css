@@ -38,36 +38,49 @@ body {
 /* NAME HEADER DIV ----------------------> */
 
 #nameHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
     text-align: center;
-
     background-color: black;
     color: white;
-    padding: 5vh 0 0 0;
-
+    padding: 1.5vh 2vw 1.5vh 2vw;
     font-family: 'Exo 2', sans-serif;
     font-weight: 200;
-    font-size:3.5em;
-
-    -webkit-user-select: none; /* Safari */        
+    font-size: xxx-large;
+    -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+    margin: 0 1vw;
+    
+    box-shadow: 5px 5px 0px 0px rgb(117 117 117);
+    
+    min-width: 30%;
+    max-width: 30%;
+}
+
+#full-name {
+    position: absolute;
 }
 
 #jobtitle-div {
     text-align: center;
-
     padding: 0.75vh 0 2.25vh 0;
-
-    background-color: black;
+    /* background-color: black; */
     font-family: 'Exo 2', sans-serif;
     font-weight:700;
-    font-size:1.15em;
-
-    -webkit-user-select: none; /* Safari */        
+    font-size: 0.25em;
+    -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+
+
+    position: absolute;
+    right: 56vw;
+    top: 47.5vh;
 }
 
 #jobtitle {
@@ -87,13 +100,15 @@ body {
 #displayedContent {
     /* border: darkcyan 3px solid; */
     box-sizing: border-box;
-    height: 62vh;
+    height: 100%;
     /* overflow: auto; */
-
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* IE 10+ */
     overflow-y:hidden; /* might need to be SCROLL */
     overflow-x:hidden;
+    margin: 0 1vw;
+    display: none;
+    min-width: 33%;
 }
 
 
@@ -355,14 +370,13 @@ h2 {
 #resumeContent {
     background: darkblue;
     border-top: 1px solid white;
-
     text-align: left;
     display: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .95em;
-
     padding: 1vh 2vw;
+    /* box-shadow: blue 5px 5px 0px 0px; */
 }
 
 li {
@@ -377,8 +391,7 @@ li {
 #navigationButtons {
     /* border: brown 3px solid; */
     box-sizing: border-box;
-    padding-top: 1.5vh;
-
+    /* padding-top: 1.5vh; */
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -387,66 +400,97 @@ li {
 .main-buttons {
     background-color: black;
     color: white;
-    padding: 1.5vh 2vw;
+    padding: 1.5vh 2vw 1.5vh 2vw;
     font-family: 'Exo 2', sans-serif;
     font-weight: 200;
     font-size:2.4em;
-
     cursor: pointer;
-
-    -webkit-user-select: none; /* Safari */        
+    -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+    margin: 0 1vw;
 }
 
 #aboutButton {
-
+    box-shadow: red 5px 5px 0px 0px;
 }
 
 #projectsButton {
     margin-left: 1vw;
     margin-right: 1vw;
+
+    box-shadow: rgb(46, 232, 0) 5px 5px 0px 0px;
 }
 
 #resumeButton {
-
+    box-shadow: blue 5px 5px 0px 0px;
 }
 /* END of NAVIGATION BUTTONS DIV ----------------------> */
 /* ======================================================================== */
 
 .outside-column {
-    width: 100%;
+    /* width: 100%; */
 }
 
 #container {
     /* border: crimson 5px solid; */
+    width: 100%;
     height: 91vh;
     margin: 5vh auto 0 auto;
     box-sizing: border-box;
-
     display: flex;
-    flex-flow: column nowrap;
+    /* flex-flow: column nowrap; */
+    justify-content: center;
 }
 
-@media all and (orientation:landscape) {  
-    #container {
-        width: 50%;
+@media only screen and (max-width: 1414px) {
+    .main-buttons {
+        font-size: 1.5em;
+    }
+
+    #nameHeader {
+        min-width: 25%;
+        font-size: 2.7rem;
     }
 }
 
-@media all and (max-device-width : 789px) and (orientation:portrait) {  
+@media only screen and (max-width: 1185px) {
+    #nameHeader {
+        min-width: 20%;
+        font-size: 2em;
+    }
+    
+    #full-name {
+        position: relative;
+        width: min-content;
+    }
+
+    #jobtitle-div {
+        position: relative;
+        right: 0px;
+        top: 0px;
+    }
+  }
+
+@media only screen and (max-width : 815px){  
     .outside-column {
         width: 0;
     }
     
     #container {
-        max-width: 70%;
+        height: 100%;
+        max-width: 80%;
+        margin: 0 auto 0 auto;
+        flex-flow: column nowrap;
+        justify-content: center;
     }
 
     #nameHeader {
         padding: 5vh 0;
-        font-size: 2.4em;
+        min-width: unset;
+        max-width: unset;
+        height: 10vh;
     }
 
     #jobtitle-div {
@@ -472,10 +516,21 @@ li {
 
     .main-buttons {
         font-size: 2em;
+        width: 100%;
     }
 }
 
-@media all and (max-device-width : 582px) and (orientation:portrait) {
+@media only screen and (max-width: 773px) {
+    #full-name {
+        position: relative;
+    }
+
+    #jobtitle-div {
+        display: none;
+    }
+  }
+
+@media only screen and (max-width : 582px){
     
     #container {
         max-width: 100%;
@@ -485,9 +540,6 @@ li {
 
     #nameHeader {
         padding: 5vh 0;
-        font-size: 1.5em;
-        font-weight: 700;
-        width: 100vw;
     }
     
     #displayedContent {
@@ -495,7 +547,7 @@ li {
     }
 }
 
-@media all and (max-device-width : 400px) and (orientation:portrait) {
+@media only screen and (max-width : 400px){
     .outside-column {
         width: 0;
     }
@@ -510,7 +562,7 @@ li {
         padding: 5vh 0;
         font-size: 1.5em;
         font-weight: 700;
-        width: 100vw;
+        /* width: 100vw; */
     }
 
     #jobtitle-div {
@@ -538,7 +590,7 @@ li {
         font-size: 1em;
         font-weight: 700;
         padding: 3vh 2vw;
-        width: -webkit-fill-available;
+        /* width: 100%; */
         text-align: center;
     }
 
@@ -557,8 +609,14 @@ li {
 @keyframes fadeInAnimation { 
     0% { 
         opacity: 0; 
+        color: yellow;
     } 
+    60% {
+        opacity: 1; 
+        color: yellow;
+    }
     100% { 
         opacity: 1; 
+        color: white;
     } 
 } 
