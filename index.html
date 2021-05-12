@@ -74,9 +74,9 @@
                         <li>Taught myself how to use data attributes in HTML and JavaScript to dynamically display any selected photo out of an array of photos.</li>
                     </ul>
                     <div class="screenshots" id="screenshot-Mallen">
-                        <div class="trans-overlay" onclick="parent.open('img/screenshot6.PNG')">
+                        <div class="trans-overlay" onclick="openInNewTab('https://www.mallendesigns.com');">
                             <h2>Michael Allen Designs</h2>
-                            <p>click for full size image</p>
+                            <p>click to go to website</p>
                         </div>
                     </div>
                     
@@ -236,5 +236,10 @@
     </div>
     <div class="outside-column"></div>
 
-
-</body></html>
+<script>
+    function openInNewTab(url) {
+        window.open(url, '_blank').focus();
+    }
+</script>
+</body>
+</html>
