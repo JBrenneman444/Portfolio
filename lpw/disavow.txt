@@ -1,0 +1,11 @@
+# THIS FILE CATALOGS ALL THE WEBSITES AND ENTIRE DOMAINS THAT I WISH TO DISAVOW
+
+# SPECIFIC URLS & PAGES
+
+
+# WHOLE DOMAINS
+domain:sparkioc.com
+domain:pingwhoisdatabase.com
+domain:domain-database.info
+domain:sucuri.net
+domain:cubdomain.com

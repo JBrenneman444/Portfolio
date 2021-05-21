@@ -1,0 +1,27 @@
+#thank-you-message {
+  display: none;
+}
+#alreadyExists {
+  display: none;
+}
+.update-form {
+  display: none;
+}
+.bar-sports {
+  display: none;
+}
+.live-entertainment {
+  display: none;
+}
+.games {
+  display: none;
+}
+.bar-sports-type-section {
+  display: none;
+}
+.games-type-section {
+  display: none;
+}
+form {
+  max-width: 500px;
+}

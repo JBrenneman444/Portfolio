@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Map of local places and bars with pool tables, darts, shuffleboard, ping pong, cornhole and foosball near you!">
+
+    <meta name="keywords" content="local places with pool tables, local places with billiards, billiards near me, pool halls near me, local places with bar games, bars with pool tables near me, bars with pool near me, local bars with pool, local bars with pool tables, billiards near me, sports bars near me">
+    <meta name="author" content="">
+
+<!-- FACEBOOK LINK PREVIEW -->
+<meta property="og:url"                content="http://localplaceswith.com" />
+<meta property="og:type"               content="website" />
+<meta property="og:title"              content="LOCAL PLACES WITH- Bar Sports" />
+<meta property="og:description"        content="Find local places to play billiards, darts, shuffleboard, ping pong, cornhole, and foosball, near you!" />
+<meta property="og:image"              content="http://localplaceswith.com/images/LPW_Logo_FB.png" />
+
+
+             <title>LOCAL PLACES WITH- Billiards, pool halls, and bars with pool tables</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/custom.css" type="text/css" rel="stylesheet">
+
+    <!-- Chads Map CSS -->
+    <link rel="stylesheet" type="text/css" href="./styles/maps.css">
+
+    <!--GOOGLE HREFLANG TAG-->
+    <link rel="alternate" href="http://localplaceswith.com" hreflang="en-us" />
+
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+<link rel="shortcut icon" href="/images/balloonsLOGO.png"/>
+  <body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a
+        ="Local Places With" class="navbar-brand" href="http://www.localplaceswith.com"><img width="85%"  src="/images/LPW_Logo_SMALL.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--NAVBAR COLLAPSABLE LINKS-->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a title="Places with pool tables, darts, ping-pong, and more." class="btn btn-light navbar-btn" role="button" href="http://www.localplaceswith.com">BAR SPORTS</a>&nbsp;&nbsp;
+            </li>
+            <li class="nav-item">
+                <a title="Places with karaoke, live music, open mics, and more." class="btn btn-outline-light navbar-btn" role="button" href="/live-entertainment.html">LIVE ENTERTAINMENT</a>&nbsp;&nbsp;
+              </li>
+              <li class="nav-item"><!--ACTIVE BUTTON COLOR-->
+                <a title="Places with trivia nights, arcades, board games, and more." class="btn btn-outline-light navbar-btn" role="button" href="/games.html">GAMES</a>&nbsp;&nbsp;
+              </li>
+
+          </ul>
+          	<a title="Add a place!" class="btn btn-danger navbar-btn" role="button" href="/add-a-place.html">+</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page CONTENT -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+
+<!-- LEADERBOARD ALERT -->
+          <div class="alert alert-warning" style="display:none;">
+            THE <a href="/add-a-place.html#Leaderboard" class="NOcolor">LEADERBOARD</a> HAS BEEN UPDATED
+          </div>
+
+<br>
+
+          <!--MAIN BODY CONTENT & MAP -->
+          <font size="3"><strong>Bar Sports</strong></font><br>
+          <h6><font class="lead">Find local places with <strong>pool tables</strong>, <strong>darts</strong>, and <strong>more</strong> near you.</font></h6>
+
+ <!--1ST AD-->
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- UNDER Map -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1744357799793776"
+     data-ad-slot="2599711056"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+          <!--MAP SEARCH & RESET-->
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <button class="btn btn-secondary btn-lg" id="resetButton" alt="Reset button"> RESET</button>
+            </div>
+            <input class="form-control input-lg" id="mapSearch" placeholder="City or State" type="text" autocomplete="nope" name="Email" value="">
+            <div class="input-group-append">
+              <button class="btn btn-warning btn-lg" id="searchButton" alt="Search button"> SEARCH</button>
+            </div>
+          </div>
+
+          <!--FAILED SEARCH FUNCTION-->
+          <div id="failedSearch" class="failed-search mt-2 bg-info">
+            <h4 class="mx-auto text-center"> No places found here - try another area!</h4>
+          </div>
+          <!--MULTI SELECT FUNCTION-->
+          <div id="multiSelect" class="multi-select mt-2 bg-info">
+            <h4 class="mx-auto text-center"> Now displaying places with ALL selected Bar Sports. </h4>
+          </div>
+
+          <!--MAP & MAP NAV-->
+          <div id="map" width="100%" height="300px" style=""></div>
+
+          <!--MAP NAV-->
+          <nav id="mapNav" class="mapNav py-2 px-2">
+<font color=white>FILTER by:&nbsp;</font>
+            <a class="map-nav-item" href="#">
+              <img class="map-nav-img" src="/images/marker3.png" alt="Local places with CORNHOLE">
+              <span>Cornhole</span>
+            </a>
+            <a class="map-nav-item" href="#">
+              <img class="map-nav-img ml-3" src="/images/marker2.png" alt="Local places with DARTS">
+              <span>Darts</span>
+            </a>
+            <a class="map-nav-item" href="#">
+              <img class="map-nav-img ml-3" src="/images/marker4.png" alt="Local places with FOOSBALL">
+              <span>Foosball</span>
+            </a>
+            <a class="map-nav-item" href="#">
+              <img class="map-nav-img ml-3" src="/images/marker1.png" alt="Local places with PING PONG">
+              <span>Ping Pong</span>
+            </a>
+            <a class="map-nav-item" href="#">
+              <img class="map-nav-img ml-3" src="/images/marker0.png" alt="Local places with POOL TABLES">
+              <span>Pool</span>
+            </a>
+            <a class="map-nav-item" href="#">
+              <img class="map-nav-img ml-3" src="/images/marker5.png" alt="Local places with SHUFFLEBOARD">
+              <span>Shuffleboard</span>
+            </a>
+              <!-- <a class="map-nav-item" href="#">
+                <img class="map-nav-img ml-3" src="/images/marker6.png">
+                <span>Bar Sports Other</span>
+              </a> -->
+          </nav>
+
+
+
+
+
+
+          <!--LIST/TABLE of PLACES-->
+          <div class="container p-0">
+            <button class="btn btn-primary my-3" data-toggle="collapse" data-target=".list-container" aria-expanded="true" aria-controls="list-container">
+              <span class="">List of Selected Places</span>
+            </button>
+            <div class="collapse list-container">
+            </div>
+          </div>
+
+        <!--ABOUT US-->
+          <p>
+              <div class="card mx-auto border-info mb-3 w-75 text-left">
+                <div class="card-header bg-info text-white">About <strong>LOCAL PLACES WITH</strong></div>
+                <div class="card-body text-info">
+                    <h5 class="card-title"><b>What is Local Places With?</b></h5>
+                      <p class="card-text">Local Places With is a map of places with fun amenities like bar sports, live entertainment, and games.</p>
+                  <hr>
+                    <font size=4 class="card-title"><b>How does Local Places With define the amenities?</b></font>
+                      <ul class="list-group list-group-flush text-info">
+                          <li class="list-group-item"><font color="#f44242"><strong>Bar Sports</strong></font>: Most likely found in a bar. Doesn&rsquo;t require electricity. And a little athletic skill never hurts.</li>
+                          <li class="list-group-item"><strong>Live Entertainment</strong>: Social and musical activities geared toward an audience or group participation.</li>
+                          <li class="list-group-item"><font color="#efc434"><strong>Games</strong></font>: Not quite a sport, not quite a social event, but probably just as fun.</li>
+                      </ul>
+                  <br>
+                    <font size=4 class="card-title"><b>Who finds all these local places?</b></font>
+                      <p class="card-text">You do! Feel free to add or update one <a class="NOcolor" href="/add-a-place.html">here</a>.</p>
+                </div>
+              </div>
+
+
+	<!--TITLE BAR-->
+          </p>
+          <br>
+<p><h1><strong><img alt="Local Places With" src="/images/balloonsLOGO.png" width=40 height=40> Local Places With</strong>: Bar Sports</h1>
+<h2>The #1 page for finding <strong>local places</strong> and <strong>bars with pool tables near you</strong>.</h2></p>
+<!--2ND AD-->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- UNDER Map -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1744357799793776"
+     data-ad-slot="2599711056"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+<br>
+
+
+<!-- TOP 5 POOL TABLES -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img alt="Local Places With" src="/images/balloonsLOGO.png" width=20 height=20><font size="4"> LPW&rsquo;s 5 Favorite:</font><h4>Local places with <strong><font color="#ff4e4e">Pool Tables</font></strong></h4>
+      <table class="table table-sm table-dark table-hover text-left">
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+         <td><font color="#ff4e4e">Doctor Proctor&rsquo;s Lounge</font></td>
+          <td><strong>Denver, CO</strong></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td><font color="#ff4e4e">Temple Billiards</font></td>
+          <td><strong>Seattle, WA</strong></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td><font color="#ff4e4e">Lucky&rsquo;s Bar</font></td>
+          <td><strong>New Orleans, LA</strong></td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td><font color="#ff4e4e">Jolt&rsquo;n Joe&rsquo;s Gaslamp</font></td>
+          <td><strong>San Diego, CA</strong></td>
+        </tr>
+
+        <tr>
+          <th scope="row">5</th>
+          <td><font color="#ff4e4e">Down Under Bar & Grill</font></td>
+          <td><strong>Westminster, MD</strong></td>
+        </tr>
+      </tbody>
+    </table></div>
+
+
+    <div class="col-md-0"></div>
+
+<!-- TOP 5 DARTS -->
+    <div class="col-md-6">
+      <img alt="Local Places With" src="/images/balloonsLOGO.png" width=20 height=20><font size="4"> LPW&rsquo;s 5 Favorite:</font><h4>Local places with <strong><font color="#525390">Darts</font></strong></h4>
+      <table class="table table-sm table-dark table-hover text-left">
+      <tbody>
+          <tr>
+              <th scope="row">1</th>
+              <td><font color="#3673c4">Mustard Seed Bar & Grill</font></td>
+              <td><strong>Bellevue, WA</strong></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                              <td><font color="#3673c4">The Gaf West</font></td>
+                <td><strong>New York, NY</strong></td>
+              </tr>
+            <tr>
+                <th scope="row">3</th>
+                              <td><font color="#3673c4">Shooters Billiards & Sports Bar</font></td>
+                <td><strong>Austin, TX</strong></td>
+              </tr>
+              <tr>
+                  <th scope="row">4</th>
+                                <td><font color="#3673c4">Zoo Tavern</font></td>
+                  <td><strong>Seattle, WA</strong></td>
+                </tr>
+            <tr>
+              <th scope="row">5</th>
+                            <td><font color="#3673c4">Tony&rsquo;s Saloon</font></td>
+              <td><strong>Los Angeles, CA</strong></td>
+            </tr>
+      </tbody>
+    </table></div>
+  </div>
+</div>
+
+
+<!-- TOP 5 CORNHOLE -->
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img alt="Local Places With" src="/images/balloonsLOGO.png" width=20 height=20><font size="4"> LPW&rsquo;s 5 Favorite:</font><h4>Local places with <strong><font color="#03690a">Cornhole</font></strong></h4>
+        <table class="table table-sm table-dark table-hover text-left">
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+              <td><font color="#0e9637">The Brick</font></td>
+              <td><strong>Charleston, SC</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+              <td><font color="#0e9637">8 Ball Sports & Billiards</font></td>
+             <td><strong>Columbus, OH</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+             <td><font color="#0e9637">Barebottle Brewing Company</font></td>
+              <td><strong>San Francisco, CA</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+              <td><font color="#0e9637">Flatstick Pub</font></td>
+              <td><strong>Seattle, WA</strong></td>
+          </tr>
+              <tr>
+                <th scope="row">5</th>
+                  <td><font color="#0e9637">Mile High Spirits</font></td>
+                  <td><strong>Denver, CO</strong></td>
+              </tr>
+        </tbody>
+      </table></div>
+
+
+ <div class="col-md-0"></div>
+
+<!-- TOP 5 FOOSBALL -->
+      <div class="col-md-6">
+        <img alt="Local Places With" src="/images/balloonsLOGO.png" width=20 height=20><font size="4"> LPW&rsquo;s 5 Favorite:</font><h4>Local places with <strong><font color="#d0c814">Foosball</font></strong></h4>
+        <table class="table table-sm table-dark table-hover text-left">
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+              <td><font color="#dfdb23">Westport Social</font></td>
+              <td><strong>St Louis, MO</strong></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+               <td><font color="#dfdb23">Under the Rose Brewing Company</font></td>
+                <td><strong>Reno, NV</strong></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                  <td><font color="#dfdb23">Pitcher&rsquo;s Pub</font></td>
+                  <td><strong>Madison, WI</strong></td>
+                </tr>
+              <tr>
+              <th scope="row">4</th>
+                <td><font color="#dfdb23">Warehouse Billiard Bar</font></td>
+                <td><strong>Austin, TX</strong></td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td><font color="#dfdb23">Punch Bowl Social</font></td>
+                <td><strong>Denver, CO</strong></td>
+              </tr>
+
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+
+
+
+<!-- TOP 5 PING PONG -->
+<div class="container">
+    <div class="row">
+
+      <div class="col-md-6">
+        <img alt="Local Places With" src="/images/balloonsLOGO.png" width=20 height=20><font size="4"> LPW&rsquo;s 5 Favorite:</font><h4>Local places with <strong><font color="#29cddb">Ping Pong</font></strong></h4>
+        <table class="table table-sm table-dark table-hover text-left">
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+              <td><font color="#29cddb">Ricochet</font></td>
+              <td><strong>Des Moines, IA</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+              <td><font color="#29cddb">Carraro&rsquo;s & Joe&rsquo;s Place</font></td>
+              <td><strong>Albuquerque, NM</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+              <td><font color="#29cddb">Shamrock</font></td>
+              <td><strong>New Orleans, LA</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+              <td><font color="#29cddb">Oasis Bar</font></td>
+              <td><strong>Melbourne Beach, FL</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+              <td><font color="#29cddb">Amsterdam Billiards</font></td>
+              <td><strong>New York, NY</strong></td>
+          </tr>
+        </tbody>
+      </table></div>
+
+<!-- TOP 5 SHUFFLEBOARD -->
+ <div class="col-md-0"></div>
+      <div class="col-md-6">
+        <img alt="Local Places With" src="/images/balloonsLOGO.png" width=20 height=20><font size="4"> LPW&rsquo;s 5 Favorite:</font><h4>Local places with <strong><font color="#50d883">Shuffleboard</font></strong></h4>
+        <table class="table table-sm table-dark table-hover text-left">
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+              <td><font color="#50d883">Third Street Bar</font></td>
+              <td><strong>Detroit, MI</strong></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+                <td><font color="#50d883">Kung Fu Saloon</font></td>
+                <td><strong>Dallas, TX</strong></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                  <td><font color="#50d883">Lava Lounge</font></td>
+                  <td><strong>Seattle WA</strong></td>
+                </tr>
+              <tr>
+              <th scope="row">4</th>
+                <td><font color="#50d883">Bluebonnet Bar</font></td>
+                <td><strong>Norman, OK</strong></td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td><font color="#50d883">Zipp&rsquo;s Sports Grill</font></td>
+                <td><strong>Phoenix, AZ</strong></td>
+              </tr>
+
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+
+
+<br>
+<!--OUR STORY-->
+<p>
+  <div class="card mx-auto border-info mb-3 w-75 text-left">
+    <div class="card-header bg-info text-white">Our <b>STORY</b></div>
+    <div class="card-body text-info">
+      <h5 class="card-title"><b>The Inspiration for Local Places With</b></h5>
+        <p class="card-text">The idea for Local Places With came to us back in 2013 when a couple of us were out and about getting pizza in downtown Seattle. We wanted to play pool but realized none of us actually knew of any places to play pool nearby. Eventually, we started looking for local places with billiards more often and started keeping track of a collection of bars with pool tables and other bar games. One thing lead to another, things like karaoke and trivia nights and arcades bars started showing up on our lists, until finally one of us slapped a sloppily-designed Powerpoint presentation in front of everyone&rsquo;s faces, and we came to the conclusion that Local Places With had to happen.
+        </p>
+    <hr>
+    <h5 class="card-title"><b>How Local Places With is different from other websites</b></h5>
+      <p class="card-text">While we love using tools like Yelp and Google, we want to create a website that focuses on finding only specific amenities or activities for users,
+        such as bars with pool tables or other bar games, rather than attempting to provide every possible piece of information about a place.
+        We&rsquo;ll leave that task to veterans of the industry like Yelp and Google!
+      </p>
+  <hr>
+  <h5 class="card-title"><b>The Vision for Local Places With</b></h5>
+  <p class="card-text">Our goal for Local Places With is to create a website that helps users find the activities and amenities they love the most, while also being
+    fun and easy-to-use. Currently, we&rsquo;ve focused on locating bars with billiards and other bar games, but that will soon carry over into
+     places with karaoke and dancing, trivia nights and arcades, and we really see it expanding into a ton of different areas!
+  </p>
+
+    </div>
+  </div>
+<br>
+
+<!-- TOP CITIES CONTAINER -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+  
+      <div class="col-md-4">
+        
+        <!-- TOP CITIES-->
+          <img alt="Local Places With" src="/images/balloonsLOGO.png" width=20 height=20><font size="4"> LPW&rsquo;s Top 5:</font><h4>Cities with the most <strong><font color="#800080">Bar Sports</font></strong></h4>
+          <table class="table table-sm table-dark table-hover text-left">
+            <thead>
+             <tr>
+               <th scope="col">#</th>
+               <th scope="col">City</th>
+               <th scope="col">Places</th>
+             </tr>
+           </thead>             
+            <tbody>
+
+            <tr>
+              <th scope="row">#1</th>
+              <td><font color="#9932CC"><a href="billiards/portland.html" class="NOcolor">Portland, OR</a></font></td>
+              <td>75+</td>
+            </tr>
+
+            <tr>
+              <th scope="row">#2</th>
+              <td><font color="#9932CC"><a href="billiards/seattle.html" class="NOcolor">Seattle, WA</a></font></td>
+              <td>50+</td>
+            </tr>
+
+            <tr>
+              <th scope="row">#3</th>
+              <td><font color="#9932CC"><a href="billiards/los-angeles.html" class="NOcolor">Los Angeles, CA</a></font></td>
+              <td>30+</td>
+            </tr>
+
+            <tr>
+              <th scope="row">#4</th>
+              <td><font color="#9932CC"><a href="billiards/denver.html" class="NOcolor">Denver, CO</a></font></td>
+              <td>30+</td>
+            </tr>
+
+            <tr>
+              <th scope="row">#5</th>
+              <td><font color="#9932CC"><a href="billiards/charleston.html" class="NOcolor">Charleston, SC</a></font></td>
+              <td>20+</td>
+            </tr>
+
+            <tr>
+                <td colspan="3" class="text-center"><small><font color="grey"><b>Last Updated</b>: August 26th, 2018</font></small></td>
+            </tr>
+
+          </tbody>
+          </table>
+      </div>
+   
+  
+      <div class="col-md-4">
+      </div>
+    </div>
+  </div>
+<!--END of Leaderboard CONTAINER-->
+
+
+          <!--FOOTER CONTENT -->
+          <br>
+          <small class="text-muted"><b>Updated:</b> October 1st, 2018</small><br>
+
+          <p><iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.localplaceswith.com&layout=button_count&size=small&mobile_iframe=true&width=69&height=20&appId" width="75" height="20" style="padding:1px;border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><br>
+          <br>
+
+          <font size="2"><a href="/sitemap.html" class="customlink1">Sitemap</a> - <a href="/contact-us.html" class="customlink1">Contact Us</a> - <a href="/credits.html" class="customlink1">Credits</a><br><a href="/terms-and-conditions.html" class="customlink1">Terms and Conditions</a> - <a href="/privacy-policy.html" class="customlink1">Privacy Policy</a></font></p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AUTO POP UP/DISAPPEAR -->
+    <script type="text/javascript">
+        {
+            setTimeout(function(){
+                $(".alert").slideDown(500).show(500);
+                $(".alert").fadeTo(7000, 500).slideUp(500, function(){$(".alert").slideUp(500);});
+            },1000);
+        }
+    </script>
+
+
+    <script type="text/javascript" src="/scripts/init-map.js"></script>
+    <script src="/data/bar-sports-data.js"></script>
+
+    <script src="/scripts/list-script.js"></script>
+    <script src="/scripts/maps-script.js"></script>
+    <script src="/scripts/search-script.js"></script>
+    <script src="/scripts/maps-events.js"></script>
+    <script>
+      var page = 'Bar Sports';
+      var center = {lat: 45, lng: -110};
+      var zoom = 3;
+      function initMapWrapper() {
+        initMap('Bar Sports', center, zoom);
+      }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8PHeruSgg5rBwwML2IWYO6DsSsaU5na0&callback=initMapWrapper">
+    </script>
+  </body>
+
+</html>

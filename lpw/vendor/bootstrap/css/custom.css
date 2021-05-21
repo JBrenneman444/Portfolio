@@ -1,0 +1,82 @@
+/* CUSTOM LINK STYLE for FOOTER */
+
+a.customlink1:link { color:rgba(17, 92, 189, 0.6); text-decoration:none; font-weight:normal; }
+
+a.customlink1:visited { color:rgba(17, 92, 189, 0.6); text-decoration:none; font-weight:normal; }
+
+a.customlink1:hover { color:rgba(17, 92, 189); text-decoration:underline; font-weight:normal; }
+
+a.customlink1:active { color:rgba(17, 92, 189, 0.6); text-decoration:none; font-weight:normal; }
+
+
+/* CUSTOM LINK STYLE for LPWFAVE_POOL */
+
+a.POOLlink:link { color:rgb(218, 58, 58); text-decoration:none; font-weight:normal; }
+
+a.POOLlink:visited { color:rgb(218, 58, 58); text-decoration:none; font-weight:normal; }
+
+a.POOLlink:hover { color:rgba(235, 86, 86); text-decoration:none; font-weight:normal; }
+
+a.POOLlink:active { color:rgb(218, 58, 58); text-decoration:none; font-weight:normal; }
+
+
+/* CUSTOM LINK STYLE for LPWFAVE_DARTS */
+
+a.DARTlink:link { color:rgb(24, 89, 173); text-decoration:none; font-weight:normal; }
+
+a.DARTlink:visited { color:rgb(24, 89, 173); text-decoration:none; font-weight:normal; }
+
+a.DARTlink:hover { color:rgb(54, 115, 196); text-decoration:none; font-weight:normal; }
+
+a.DARTlink:active { color:rgb(24, 89, 173); text-decoration:none; font-weight:normal; }
+
+/* CUSTOM LINK STYLE for LPWFAVE_CORNHOLE */
+
+a.CORNlink:link { color:rgb(15, 119, 46); text-decoration:none; font-weight:normal; }
+
+a.CORNlink:visited { color:rgb(15, 119, 46); text-decoration:none; font-weight:normal; }
+
+a.CORNlink:hover { color:rgb(14, 150, 55); text-decoration:none; font-weight:normal; }
+
+a.CORNlink:active { color:rgb(15, 119, 46); text-decoration:none; font-weight:normal; }
+
+
+/* CUSTOM LINK STYLE for LPWFAVE_FOOSBALL */
+
+a.FOOSlink:link { color:rgba(182, 179, 29, 0.938); text-decoration:none; font-weight:normal; }
+
+a.FOOSlink:visited { color:rgba(182, 179, 29, 0.938); text-decoration:none; font-weight:normal; }
+
+a.FOOSlink:hover { color:rgba(223, 219, 35, 0.938); text-decoration:none; font-weight:normal; }
+
+a.FOOSlink:active { color:rgba(182, 179, 29, 0.938); text-decoration:none; font-weight:normal; }
+
+/* CUSTOM LINK STYLE for LPWFAVE_PING PONG */
+
+a.PINGlink:link { color:#29cddb; text-decoration:none; font-weight:normal; }
+
+a.PINGlink:visited { color:#29cddb; text-decoration:none; font-weight:normal; }
+
+a.PINGlink:hover { color:#96dce2; text-decoration:none; font-weight:normal; }
+
+a.PINGlink:active { color:#29cddb; text-decoration:none; font-weight:normal; }
+
+/* CUSTOM LINK STYLE for LPWFAVE_SHUFFLEBOARD */
+
+a.SHUFFLElink:link { color:#50d883; text-decoration:none; font-weight:normal; }
+
+a.SHUFFLElink:visited { color:#50d883; text-decoration:none; font-weight:normal; }
+
+a.SHUFFLElink:hover { color:#7cdba0; text-decoration:none; font-weight:normal; }
+
+a.SHUFFLElink:active { color:#50d883; text-decoration:none; font-weight:normal; }
+
+/* CUSTOM LINK STYLE for NO CHANGE OF COLOR LINKS */
+
+a.NOcolor:link { color:#bb00bb; text-decoration:none; font-weight:normal; }
+
+a.NOcolor:visited { color:#960096; text-decoration:none; font-weight:normal; }
+
+a.NOcolor:hover { color:#bb00bb; text-decoration:underline; font-weight:normal; }
+
+a.NOcolor:active { color:#bb00bb; text-decoration:none; font-weight:normal; }
