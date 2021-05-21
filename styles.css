@@ -347,6 +347,13 @@ h2 {
     background-size: cover;
 }
 
+#screenshot-LPW {
+    background-image: url("img/screenshot8.PNG");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #screenshot-Mallen {
     background-image: url("img/screenshot6.PNG");
     background-position: center top;
