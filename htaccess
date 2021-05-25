@@ -2,3 +2,15 @@ RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteCond %{HTTP_HOST} ^(www\.)?jakebrenneman\.com
 RewriteRule ^(.*)$ https://www.jakebrenneman.com/$1 [R,L]
+
+<IfModule mod_rewrite.c>
+
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^react-version/index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . react-version/index.html [L]
+
+</IfModule>

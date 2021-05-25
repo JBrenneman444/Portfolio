@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+console.log("if routes not working, check HTACCESS filepaths")
+
 function App() {
   return (
     <div className="App">
